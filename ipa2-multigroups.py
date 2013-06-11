@@ -42,7 +42,7 @@ def add_users_into_groups(groups, users):
     for i in values:
         subprocess.Popen(
             [
-                "/user/bin/ipa",
+                "/usr/bin/ipa",
                 "group-add-member",
                 i,
                 '--users=%s' % (users)
